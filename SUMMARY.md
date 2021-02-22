@@ -5,13 +5,13 @@
 ## Getting Started
 
 * [Introduction](getting-started/introduction.md)
-* [Installation](getting-started/installation.md)
+* [Setup](getting-started/setup.md)
 
 ## API
 
-* [Untitled](api/untitled.md)
+* [Introduction](api/untitled.md)
 
 ## SDK
 
-* [Untitled](sdk/untitled.md)
+* [Introduction](sdk/untitled.md)
 
