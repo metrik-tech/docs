@@ -6,6 +6,7 @@
 
 * [Introduction](getting-started/introduction.md)
 * [Setup](getting-started/setup.md)
+* [Configuration](getting-started/configuration.md)
 
 ## API
 
