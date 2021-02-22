@@ -37,17 +37,11 @@ Then you can use the basic functionality \(`GET` HTTP requests\) in your client
 local placeID = game.PlaceId
 local metrikSDK = require(game.ReplicatedStorage:WaitForChild("MetrikClient") -- This will access a version of the SDK on the client that was accessed on the server
 
--- Getting game visits
+-- Example usage (Not required)
 gameVisits = metrikSDK:GetData("Visits", placeID)
 
 print(gameVisits)
 
--- Getting game players
-players = metrikSDK:GetData("Players", placeID)
-
-while true do
-    print(players)
-end
 
 ```
 
