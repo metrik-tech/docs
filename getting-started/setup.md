@@ -13,11 +13,14 @@ Make a script in `ServerScriptService` with the following code:
 ```lua
 local metrikSDK = require(WILL BE UPDATED WHEN RELEASED)
 
-metrikSDK:Register(XXXXXXXXXXXXXXXXXXXX) -- Replace this with your token. This will register your game with our servers
-metrikSDK:Start() -- This loads all the data that is needed for the API
+configuration = {
+    token = "XXXXXXXXXXXXXXXXXXXX" -- Replace this with your token. This will register your game with our servers
+}
+
+metrikSDK:Start(configuration) -- This loads all the data that is needed for the API
 ```
 
-Then change the `YOUR TOKEN HERE` to your Metrik Token, which you can get [here.](https://app.metrik.dev/settings/token/)
+Then change the `XXXXXXXXXXXXXXXXXXXX` to your Metrik Token, which you can get [here.](https://app.metrik.dev/settings/token/)
 
 {% hint style="warning" %}
 Remember to never share your Metrik Token with anybody
@@ -30,7 +33,9 @@ After all that, the Metrik SDK will be inserted in your game so that you can vie
 By default you cannot access the module on the client. To do so, you must enable it on the server:
 
 ```lua
-metrikSDK:EnableClientAccess() -- This will enable client access on your game
+configuration = {
+    clientAccessEnabled = true -- Used to know whether or not to allow access to the Metrik SDK on the client
+}
 ```
 
 Then you can use the basic functionality \(`GET` HTTP requests\) in your client
@@ -41,7 +46,7 @@ To keep our services secure we have limited the requests you can make on the cli
 
 ```lua
 local placeID = game.PlaceId
-local metrikSDK = require(game.ReplicatedStorage:WaitForChild("MetrikClient") -- This will access a version of the SDK on the client that was accessed on the server
+local metrikSDK = require(game.ReplicatedStorage:WaitForChild("MetrikClientHandler") -- This will access a version of the SDK on the client that was accessed on the server
 
 -- Example usage (Not required)
 gameVisits = metrikSDK:GetData("Visits", placeID)
