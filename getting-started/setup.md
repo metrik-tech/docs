@@ -23,6 +23,8 @@ Then change the `YOUR TOKEN HERE` to your Metrik Token, which you can get [here.
 Remember to never share your Metrik Token with anybody
 {% endhint %}
 
+After all that, the Metrik SDK will be inserted in your game so that you can view, update and delete data as well as add custom data imports through Roblox.
+
 ### Access on the client
 
 By default you cannot access the module on the client. To do so, you must enable it on the server:
