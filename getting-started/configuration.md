@@ -14,7 +14,7 @@ local metrikSDK = require(WILL BE UPDATED WHEN RELEASED)
 configuration = {
     name = "Your Game Name Here", -- Used to let Metrik know where the data is coming from. Defaults to 'game'
     token = "XXXXXXXXXXXXXXXXXXXX" -- Replace this with your token. This will register your game with our servers
-    ver = "production", -- Used to know if you are using Metrik in a production environment. Defaults to 'development'
+    build = "production", -- Used to know if you are using Metrik in a production environment. Defaults to 'development'
     clientAccessEnabled = true -- Used to know whether or not to allow access to the Metrik SDK on the client
 }
 
