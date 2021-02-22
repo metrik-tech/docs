@@ -13,7 +13,7 @@ Make a script in `ServerScriptService` with the following code:
 ```lua
 local metrikSDK = require(WILL BE UPDATED WHEN RELEASED)
 
-metrikSDK:Register(YOUR TOKEN HERE) -- This will register your game with our servers
+metrikSDK:Register(XXXXXXXXXXXXXXXXXXXX) -- Replace this with your token. This will register your game with our servers
 metrikSDK:Start() -- This loads all the data that is needed for the API
 ```
 
@@ -34,6 +34,10 @@ metrikSDK:EnableClientAccess() -- This will enable client access on your game
 ```
 
 Then you can use the basic functionality \(`GET` HTTP requests\) in your client
+
+{% hint style="info" %}
+To keep our services secure we have limited the requests you can make on the client to a handful of get requests. Alternatively, you can use `RemoteEvents` to access the client using the SDK.
+{% endhint %}
 
 ```lua
 local placeID = game.PlaceId
