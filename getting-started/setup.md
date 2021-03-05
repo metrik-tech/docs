@@ -38,7 +38,7 @@ configuration = {
 }
 ```
 
-Then you can use the basic functionality \(`GET` HTTP requests\) in your client
+Then you can use the basic functionality \(`GET` HTTP requests to non-sensitive data\) in your client
 
 {% hint style="info" %}
 To keep our services secure we have limited the requests you can make on the client to a handful of get requests. Alternatively, you can use `RemoteEvents` to access the client using the SDK.
@@ -52,9 +52,5 @@ local metrikSDK = require(game.ReplicatedStorage:WaitForChild("MetrikClientHandl
 gameVisits = metrikSDK:GetData("Visits", placeID)
 
 print(gameVisits)
-
-
 ```
-
-
 

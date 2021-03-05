@@ -10,5 +10,3 @@ If you would like to start from the beginning, head here:
 
 {% page-ref page="setup.md" %}
 
-
-

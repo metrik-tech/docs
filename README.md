@@ -7,9 +7,5 @@ description: >-
 
 # Home
 
-The Metrik Developer APIs are designed to make utilizing Metrik within your game incredibly easy. We try to keep all APIs well documented, even ones not intended for public. 
-
-We offer development support, but due to high demand wait times can be up to 3 days. Just reach out to us via the messenger if you need help.
-
-
+The Metrik Developer APIs are designed to make utilizing Metrik within your game incredibly easy. We try to keep all APIs well documented, even ones not intended for public.
 
