@@ -8,7 +8,7 @@ description: How to set up the SDK in your project
 
 You can implement the API is through Roblox's `require` feature.
 
-Make a script in `ServerScriptService` with the following code:
+Make a script in `ServerScriptService` with the following code that has a very basic configuration:
 
 ```lua
 local metrikSDK = require(WILL BE UPDATED WHEN RELEASED)

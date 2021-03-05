@@ -12,7 +12,9 @@ To start configuring, add this to your Metrik handler in `ServerScriptService`:
 local metrikSDK = require(WILL BE UPDATED WHEN RELEASED)
 
 configuration = {
-    name = "your-place-name-here", -- Used to let Metrik know where the data is coming from. Defaults to your place's name.
+    name = "Your Place Name Here", -- Used to let Metrik know what this place should be called.
+    slug = "your-place-slug-here", -- Used to let Metrik know where the data is coming from. Defaults to your place's name.
+    parent = "your-app-slug-here", -- Used to let Metrik know where to nest your data. If left empty, will default to the main app.
     token = "XXXXXXXXXXXXXXXXXXXX", -- Replace this with your token. This will register your game with our servers
     build = "production", -- Used to know if you are using Metrik in a production environment. Defaults to 'development'
     clientAccessEnabled = true, -- Used to know whether or not to allow access to the Metrik SDK on the client
@@ -26,15 +28,23 @@ metrikSDK:Start(configuration) -- This loads all the data that is needed for the
 
 ### Name
 
-The name is used to let the Metrik servers know what place the data is coming from. The name must follow these rules:
+The name attribute is simply cosmetic, and can be left if you want to keep the configuration as short as possible. The name is used to display on the Metrik web app what this place is named.
+
+If you have no name set, the slug will be formatted from `place-slug` to `Place Slug`, for example until you set a proper name.
+
+### Slug
+
+The slug attribute is used to let the Metrik servers know what place the data is coming from. The slug must follow these rules:
 
 * No caps \(`ABCDEFGHIJKLMNOPQRSTUVXWYZ`\)
 * No spaces \( ``\)
-* Dashes between words \(`place-name`\)
+* Dashes between words \(`place-slug`\)
 
 If you follow these rules while naming your place, it will not error. If you do follow these rules and it does error, contact us through our messenger to get more information.
 
-{% hint style="info" %}
-Once the data has been entered into Metrik, it will be formatted from `place-name` to `Place Name` and added as a new 
-{% endhint %}
+If you have no name set, the slug will be formatted from `place-slug` to `Place Slug`, for example until you set a proper name.
+
+### Parent
+
+The parent attribute is used to let Metrik know where exactly to nest 
 
