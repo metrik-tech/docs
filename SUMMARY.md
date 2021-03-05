@@ -2,13 +2,13 @@
 
 * [Home](README.md)
 
-## Getting Started
+## 📌 Getting Started
 
 * [Introduction](getting-started/introduction.md)
 * [Setup](getting-started/setup.md)
 * [Configuration](getting-started/configuration.md)
 
-## API
+## 📡 API
 
 * [Introduction](api/introduction.md)
 * [Endpoints](api/endpoints/README.md)
@@ -20,7 +20,7 @@
 * [Request Methods](api/request-methods.md)
 * [Roblox Proxy](api/roblox-proxy.md)
 
-## SDK
+## 🔧 SDK
 
 * [Introduction](sdk/introduction.md)
 
