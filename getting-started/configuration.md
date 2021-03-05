@@ -46,5 +46,5 @@ If you have no name set, the slug will be formatted from `place-slug` to `Place 
 
 ### Parent
 
-The parent attribute is used to let Metrik know where exactly to nest 
+The parent attribute is used to let Metrik know where exactly to nest your new Place. This is recommended because otherwise your workspace will become very messy and unorganized.
 
