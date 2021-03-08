@@ -28,11 +28,15 @@ metrikSDK:Start(configuration) -- This loads all the data that is needed for the
 
 ### Name
 
+#### _STRING_
+
 The name attribute is simply cosmetic, and can be left if you want to keep the configuration as short as possible. The name is used to display on the Metrik web app what this place is named.
 
 If you have no name set, the slug will be formatted from `place-slug` to `Place Slug`, for example until you set a proper name.
 
 ### Slug
+
+#### _STRING_
 
 The slug attribute is used to let the Metrik servers know what place the data is coming from. The slug must follow these rules:
 
@@ -46,5 +50,17 @@ If you have no name set, the slug will be formatted from `place-slug` to `Place 
 
 ### Parent
 
-The parent attribute is used to let Metrik know where exactly to nest your new Place. This is recommended because otherwise your workspace will become very messy and unorganized.
+#### _STRING_
+
+The parent attribute is used to let Metrik know where exactly to nest your new Place. This is recommended because otherwise your workspace will become very messy and unorganized. The attribute must contain an app slug that has already been created inside of your workspace.
+
+{% hint style="info" %}
+To create a new App, you can visit [app.metrik.dev/new/app](https://app.metrik.dev/new/app)
+{% endhint %}
+
+### Token
+
+#### _STRING_
+
+The token is assigned to your workspace 
 
